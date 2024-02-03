@@ -18,6 +18,15 @@ const {
   modDatetime,
   tags,
 } = post.data;
+
+let newPubDatetime = new Date(pubDatetime);
+let formattedDate = newPubDatetime.toLocaleString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+});
 ---
 
 <div class="my-8 flex justify-between">
@@ -32,6 +41,6 @@ const {
     >
   </div>
   <div class="font-extralight">
-    {pubDatetime}
+    {formattedDate}
   </div>
 </div>
