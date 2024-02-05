@@ -20,13 +20,13 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
   <BackToTop />
   <div class="flex justify-center">
     <div class="text-lg w-5/6 lg:w-3/4">
-      <aside data-pagefind-ignore>
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
         {
           paginatedPosts.map((post) => {
             return <BlogPostPreview post={post} />;
           })
         }
-      </aside>
+      </div>
     </div>
   </div>
 

@@ -5,6 +5,7 @@ title: Example Blog 3
 slug: example-blog-3
 featured: true
 draft: false
+image: https://picsum.photos/id/1081/800/600
 tags:
   - configuration
   - docs

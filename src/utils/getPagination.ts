@@ -20,8 +20,8 @@ const getPagination = <T>({
     ? Number(page)
     : 0;
 
-  const lastPost = isIndex ? 2 : currentPage * 2;
-  const startPost = isIndex ? 0 : lastPost - 2;
+  const lastPost = currentPage * 3;
+  const startPost = (currentPage - 1) * 3;
   const paginatedPosts = posts.slice(startPost, lastPost);
 
   return {
