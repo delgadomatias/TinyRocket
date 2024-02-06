@@ -14,10 +14,12 @@ const language = "en-gb";
 <html lang={language} id="top" class="scroll-smooth">
   <head>
     <BaseHead {title} {description} />
+    <script is:inline src="/clickSpark.js"></script>
   </head>
 
   <body class="font-junction">
     <slot />
     <Footer />
+    <click-spark></click-spark>
   </body>
 </html>
