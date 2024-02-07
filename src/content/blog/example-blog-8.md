@@ -1,11 +1,11 @@
 ---
 author: John Doe
-pubDatetime: 2022-07-24T04:58:53Z
-title: Example Blog 4
-slug: example-blog-4
+pubDatetime: 2022-07-29T04:58:53Z
+title: Example Blog 8
+slug: example-blog-8
 featured: true
 draft: false
-image: https://picsum.photos/id/493/800/600
+image: https://picsum.photos/id/293/800/600
 tags:
   - configuration
   - docs

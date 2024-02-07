@@ -1,3 +1,4 @@
+import { SITE } from "../config";
 import getPageNumbers from "./getPageNumber";
 
 interface GetPaginationProps<T> {
@@ -20,8 +21,8 @@ const getPagination = <T>({
     ? Number(page)
     : 0;
 
-  const lastPost = currentPage * 3;
-  const startPost = (currentPage - 1) * 3;
+  const lastPost = currentPage * SITE.blog.pagePerSite;
+  const startPost = (currentPage - 1) * SITE.blog.pagePerSite;
   const paginatedPosts = posts.slice(startPost, lastPost);
 
   return {
