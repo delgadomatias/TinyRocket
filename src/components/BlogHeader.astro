@@ -1,27 +1,57 @@
 ---
+import NavLink from "./NavLink.astro";
+import DocIcon from "./icons/DocIcon.astro";
+import HomeIcon from "./icons/HomeIcon.astro";
+import SearchIcon from "./icons/SearchIcon.astro";
+
 export interface Props {
-    title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
+const LINKS = [
+  {
+    href: "/",
+    name: "Home",
+    icon: HomeIcon,
+  },
+  {
+    href: "/doc",
+    name: "Doc",
+    icon: DocIcon,
+  },
+  {
+    href: "/search",
+    name: "Search",
+    icon: SearchIcon,
+  },
+];
 ---
 
 <header class="text-zinc-700 text-lg">
-    <a href="/blog">
-        <div class="flex justify-center my-10">
-            <img
-                class="h-28 rounded-md shadow-md shadow-zinc-500"
-                src="/assets/blog.webp"
-                alt="Tiny Rocket Blog"
-            />
-        </div>
-        <p class="text-center text-3xl mt-6 mb-3 font-extrabold font-mono">
-            {title}
-        </p>
-    </a>
-    <nav class="flex justify-center mt-6 mb-12">
-        <a class="mx-2 underline underline-offset-2" href="/"> Home</a>
-        <a class="mx-2 underline underline-offset-2" href="/doc"> Doc</a>
-        <a class="mx-2 underline underline-offset-2" href="/search"> Search</a>
-    </nav>
+  <a href="/blog">
+    <div class="flex justify-center my-10">
+      <img
+        class="h-28 rounded-md shadow-md shadow-zinc-500"
+        src="/assets/blog.webp"
+        alt="Tiny Rocket Blog"
+      />
+    </div>
+    <p class="text-center text-3xl mt-6 mb-3 font-extrabold font-mono">
+      {title}
+    </p>
+  </a>
+  <nav class="flex justify-center mt-6 mb-12 gap-2">
+    {
+      LINKS.map((link) => {
+        const Icon = link.icon;
+        return (
+          <NavLink isActive={false} href={link.href}>
+            <Icon />
+            <div slot="name">{link.name}</div>
+          </NavLink>
+        );
+      })
+    }
+  </nav>
 </header>
