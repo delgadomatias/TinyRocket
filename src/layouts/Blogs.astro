@@ -21,23 +21,19 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
 
   <div class="flex justify-center">
     <div class="text-lg w-5/6 lg:w-3/4">
-      <div
-        class="grid md:grid-cols-3 gap-6 mb-6 bg-white px-24 py-12 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
-      >
+      <div class="grid md:grid-cols-3 gap-6 mb-6 bg-white">
         {
           paginatedPosts.map((post) => {
             return <BlogPostPreview post={post} />;
           })
         }
-        <div class="col-span-3 justify-end flex">
-          <Pagination
-            {currentPage}
-            {totalPages}
-            prevUrl={`/blog${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}`}
-            nextUrl={`/blog/${currentPage + 1}`}
-          />
-        </div>
       </div>
     </div>
   </div>
+  <Pagination
+    {currentPage}
+    {totalPages}
+    prevUrl={`/blog${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}`}
+    nextUrl={`/blog/${currentPage + 1}`}
+  />
 </Page>
