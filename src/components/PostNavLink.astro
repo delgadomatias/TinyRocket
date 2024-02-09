@@ -1,0 +1,89 @@
+---
+import { getCollection } from "astro:content";
+import getSortedPosts from "../utils/getSortedPosts";
+const POSTS = await getCollection("blog");
+const sortedPosts = getSortedPosts(POSTS).slice(0, 6);
+---
+
+<div
+  x-description="Flyout menu, show/hide based on flyout menu state."
+  @click.away="flyoutMenuOpen = false"
+  x-data="{ flyoutMenuOpen: false }"
+  class="relative"
+>
+  <button
+    type="button"
+    @click="flyoutMenuOpen = !flyoutMenuOpen"
+    class="inline-flex items-center space-x-2 text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 group"
+  >
+    <span>Posts</span>
+    <svg
+      viewBox="0 0 20 20"
+      class="transition w-5 h-5 fill-none stroke-current group-hover:rotate-180"
+    >
+      <path
+        d="M5 7.5L10 12.5L15 7.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <div
+    x-show="flyoutMenuOpen"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0 translate-y-1"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 translate-y-1"
+    class="absolute -ml-4 mt-3 w-max max-w-md transform lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 xl:max-w-3xl"
+  >
+    <div class="rounded-lg shadow-lg">
+      <div class="rounded-lg shadow-xs overflow-hidden">
+        <div class="z-20 relative grid gap-8 bg-white p-8 xl:grid-cols-2">
+          {
+            sortedPosts.map((post) => {
+              return (
+                <a
+                  href={`/blog/${post.slug}`}
+                  class="flex items-start space-x-4"
+                >
+                  <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <img
+                      src={post.data.image}
+                      alt={`${post.data.title} Image`}
+                      class="h-full object-cover"
+                    />
+                    <svg
+                      class="h-6 w-6"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="space-y-1">
+                    <p class="text-base leading-6 font-medium text-gray-900">
+                      {post.data.title}
+                    </p>
+                    <p
+                      class="text-sm leading-5 text-gray-500"
+                      style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;"
+                    >
+                      {post.data.description}
+                    </p>
+                  </div>
+                </a>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

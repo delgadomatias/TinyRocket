@@ -1,14 +1,14 @@
 ---
 import AstroSearch from "astro-pagefind/components/Search";
+import Navbar from "../components/Navbar.astro";
 import Page from "../components/Page.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 
 const title = "Tiny Rocket";
 const description = "Search ..";
 ---
 
 <Page {title} {description}>
-  <SiteHeader />
+  <Navbar />
 
   <div class="flex justify-center">
     <div class="text-lg w-5/6 lg:w-3/4">

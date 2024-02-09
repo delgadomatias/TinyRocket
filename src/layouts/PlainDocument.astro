@@ -1,7 +1,7 @@
 ---
 import BackToTop from "../components/BackToTop.astro";
+import Navbar from "../components/Navbar.astro";
 import Page from "../components/Page.astro";
-import SiteHeader from "../components/SiteHeader.astro";
 
 const { content } = Astro.props;
 const { title, description, version } = content;
@@ -10,7 +10,7 @@ const displayVersion = version ? "Version " + version : "";
 
 <Page {title} {description}>
   <BackToTop />
-  <SiteHeader />
+  <Navbar />
   <div class="flex justify-center text-zinc-700">
     <div class="text-lg w-5/6 lg:w-3/4 prose shadow-2xl px-20 py-12">
       <h1 class="text-2xl font-semibold mt-8">{title}</h1>

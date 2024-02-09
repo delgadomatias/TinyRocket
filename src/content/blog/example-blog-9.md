@@ -9,7 +9,7 @@ image: https://picsum.photos/id/165/800/600
 tags:
   - configuration
   - docs
-description: Example description
+description: Aliquip adipisicing nulla Lorem dolor. Proident irure aliquip aute incididunt magna ex cupidatat adipisicing. Tempor commodo labore pariatur culpa elit sunt magna. Officia commodo sunt amet qui. Consectetur aliquip magna irure sit non laborum officia ad.
 ---
 
 This is an example Blog! <3
