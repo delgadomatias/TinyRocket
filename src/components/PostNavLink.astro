@@ -8,18 +8,19 @@ const sortedPosts = getSortedPosts(POSTS).slice(0, 6);
 <div
   x-description="Flyout menu, show/hide based on flyout menu state."
   @click.away="flyoutMenuOpen = false"
-  x-data="{ flyoutMenuOpen: false }"
+  x-data="{ flyoutMenuOpen: false, rotate: false }"
   class="relative"
 >
   <button
     type="button"
-    @click="flyoutMenuOpen = !flyoutMenuOpen"
+    @click="flyoutMenuOpen = !flyoutMenuOpen; rotate = !rotate"
     class="inline-flex items-center space-x-2 text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 group"
   >
     <span>Posts</span>
     <svg
       viewBox="0 0 20 20"
-      class="transition w-5 h-5 fill-none stroke-current group-hover:rotate-180"
+      class="transition w-5 h-5 fill-none stroke-current"
+      :class="{'rotate-180': rotate}"
     >
       <path
         d="M5 7.5L10 12.5L15 7.5"
