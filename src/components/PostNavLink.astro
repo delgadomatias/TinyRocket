@@ -7,7 +7,7 @@ const sortedPosts = getSortedPosts(POSTS).slice(0, 6);
 
 <div
   x-description="Flyout menu, show/hide based on flyout menu state."
-  @click.away="flyoutMenuOpen = false"
+  @click.away="flyoutMenuOpen = false; rotate = false"
   x-data="{ flyoutMenuOpen: false, rotate: false }"
   class="relative"
 >
