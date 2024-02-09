@@ -1,7 +1,7 @@
 ---
 author: John Doe
 pubDatetime: 2022-07-30T04:58:53Z
-title: Example Blog 9
+title: Example Post 9
 slug: example-blog-9
 featured: true
 draft: false
@@ -12,7 +12,7 @@ tags:
 description: Aliquip adipisicing nulla Lorem dolor. Proident irure aliquip aute incididunt magna ex cupidatat adipisicing. Tempor commodo labore pariatur culpa elit sunt magna. Officia commodo sunt amet qui. Consectetur aliquip magna irure sit non laborum officia ad.
 ---
 
-This is an example Blog! <3
+This is an Example Post! <3
 Consequat est incididunt est pariatur eu aliquip elit esse enim non laborum. Labore sit duis consequat cillum nulla culpa. Ea cupidatat deserunt ad culpa enim veniam proident velit ipsum.
 Eu consectetur sunt laborum sit aliqua consectetur. Sit consequat elit duis cillum ullamco id minim enim. Non non aliqua mollit occaecat do reprehenderit cillum exercitation qui commodo. Labore aliqua exercitation id adipisicing exercitation exercitation mollit adipisicing qui. Anim cupidatat consectetur dolor sit fugiat mollit voluptate pariatur mollit. Enim aliqua aute tempor fugiat aute magna dolor eu esse. Veniam incididunt elit et occaecat voluptate Lorem sit sit magna culpa fugiat sint deserunt.
 

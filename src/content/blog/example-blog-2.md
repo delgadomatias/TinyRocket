@@ -1,7 +1,7 @@
 ---
 author: John Doe
 pubDatetime: 2022-06-23T04:58:53Z
-title: Example Blog 2
+title: Example Post 2
 slug: example-blog-2
 featured: true
 draft: false
@@ -12,4 +12,4 @@ tags:
 description: Example description
 ---
 
-This is an example Blog! <3
+This is an Example Post! <3
