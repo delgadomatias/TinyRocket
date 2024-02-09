@@ -12,7 +12,6 @@ const { isActive, href } = Astro.props;
   href={href}
   draggable="true"
   role="button"
-  title={`Go to ${href}`}
   class={`h-8 px-3 py-3  w-max flex gap-2 justify-center items-center rounded-full bg-gray-200 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-primary active:bg-blue-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-700 dark:text-gray-300 dark:active:text-primary ${!isActive ? classIfNotActive : ""}`}
 >
   <slot />
