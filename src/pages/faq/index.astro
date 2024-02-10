@@ -1,0 +1,100 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Page from "../../components/Page.astro";
+---
+
+<Page title="FAQ" description="FAQ page">
+  <Navbar />
+  <main class="mx-auto max-w-3xl border shadow-md px-12 py-8 mt-6 rounded-lg">
+    <h1 class="pt-2 pb-8 text-center text-4xl font-bold">
+      Frequently Asked Questions
+    </h1>
+
+    <section class="grid grid-cols-1 gap-y-3 divide-y">
+      <details open class="group py-1 text-lg">
+        <summary
+          class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-gray-800 marker:[font-size:0px]"
+        >
+          Who built this Javascriptless accordion demo?
+          <svg
+            class="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180 duration-300 ease-out"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="text-gray-500">
+          This demo was built by <a
+            class="text-blue-500 hover:text-blue-700"
+            href="https://marktownsend.rocks">Mark Townsend</a
+          >, a professional web developer with a passion for Laravel and
+          Tailwind CSS.
+        </p>
+      </details>
+
+      <details class="group py-1 text-lg">
+        <summary
+          class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-gray-800 marker:[font-size:0px]"
+        >
+          Why not just use Javascript?
+          <svg
+            class="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180 duration-300 ease-out"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="text-gray-500">
+          It's true, you could just sprinkle in some Javascript. Many modern
+          Javascript libraries are incredibly easy to use. But sometimes you
+          don't need Javascript when you can solve your problem with simple HTML
+          and CSS.
+        </p>
+      </details>
+
+      <details class="group py-1 text-lg">
+        <summary
+          class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-gray-800 marker:[font-size:0px]"
+        >
+          Can I just copy and paste this code for my own project?
+          <svg
+            class="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180 duration-300 ease-out"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <p class="text-gray-500">
+          Absolutely! I think sharing ideas (and sometimes code) are invaluable
+          to the learning process. And let's face it: sometimes you just want to
+          get a simple FAQ or accordion section up fast and move on to more
+          pressing parts of whatever you're building.
+        </p>
+      </details>
+    </section>
+  </main>
+</Page>
