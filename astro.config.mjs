@@ -7,7 +7,7 @@ import pagefind from "astro-pagefind";
 import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tinyrocket.pages.dev",
+  site: "https://sobraine.pages.dev",
   integrations: [preact(), tailwind(), sitemap(), mdx(), pagefind()],
   legacy: {
     astroFlavoredMarkdown: true,

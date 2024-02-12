@@ -1,4 +1,4 @@
-# Tiny Rocket
+# Sobraine
 
 A starter theme for Astro.
 
@@ -14,7 +14,7 @@ A starter theme for Astro.
 - ✅ Web map / geolocation
 - ✅ [View transitions](https://docs.astro.build/en/guides/view-transitions/)
 
-Refer to [Tiny Rocket Documentation](https://tinyrocket.pages.dev/doc).
+Refer to [Sobraine Documentation](https://sobraine.pages.dev/doc).
 
 ## 🚀 Project Structure
 
@@ -53,4 +53,4 @@ Any static assets, like images, are placed in the `public/` directory.
 
 - [Astro documentation](https://docs.astro.build/en/getting-started/)
 
-- [Tiny Rocket Documentation](https://tinyrocket.pages.dev/doc)
+- [Sobraine Documentation](https://sobraine.pages.dev/doc)

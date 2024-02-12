@@ -12,9 +12,7 @@ tags:
 description: Aliquip adipisicing nulla Lorem dolor. Proident irure aliquip aute incididunt magna ex cupidatat adipisicing. Tempor commodo labore pariatur culpa elit sunt magna. Officia commodo sunt amet qui. Consectetur aliquip magna irure sit non laborum officia ad.
 ---
 
-This is an Example Post! <3
-Consequat est incididunt est pariatur eu aliquip elit esse enim non laborum. Labore sit duis consequat cillum nulla culpa. Ea cupidatat deserunt ad culpa enim veniam proident velit ipsum.
-Eu consectetur sunt laborum sit aliqua consectetur. Sit consequat elit duis cillum ullamco id minim enim. Non non aliqua mollit occaecat do reprehenderit cillum exercitation qui commodo. Labore aliqua exercitation id adipisicing exercitation exercitation mollit adipisicing qui. Anim cupidatat consectetur dolor sit fugiat mollit voluptate pariatur mollit. Enim aliqua aute tempor fugiat aute magna dolor eu esse. Veniam incididunt elit et occaecat voluptate Lorem sit sit magna culpa fugiat sint deserunt.
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
 Enim do anim irure fugiat est sit irure fugiat nisi. Consequat est anim duis deserunt nisi elit. Eu incididunt nulla anim labore nisi adipisicing voluptate cupidatat ex. Nostrud ad ullamco sunt ullamco duis ex duis fugiat excepteur veniam Lorem consectetur esse. Pariatur amet tempor occaecat consequat ad ex sint.
 
